@@ -1,0 +1,16 @@
+.logo {
+    font-family: $fontLogo;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    display: flex;
+    color: var(--main-blue);
+    text-decoration: none;
+    &__header {
+        color: var(--main-black);
+    }
+    &__footer {
+        color: var(--main-white);
+    }
+}

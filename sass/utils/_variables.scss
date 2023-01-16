@@ -1,0 +1,30 @@
+$fonfFamily: 'Roboto', sans-serif;
+$fontLogo: 'Raleway', sans-serif;
+$transition-duration: 250ms;
+$transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+$mobileEnd: 767px;
+$tabletStart: 768px;
+$tabletEnd: 1199px;
+$desktopStart: 1200px;
+
+:root {
+    --primary-color: #212121;
+    --main-blue: #2196f3;
+    --overlay-blue: #2196f3e5;
+    --button-color: #f5f4fa;
+    --main-black: #000000;
+    --main-white: #ffffff;
+    --main-grey: #757575;
+    --bg-dark: #2f303a;
+    --bg-hero: #2f303a66;
+    --white-grey: #ffffff99;
+    --header-gray: #ececec;
+    --card-border: #eeeeee;
+    --icon-unactive: #afb1b8;
+    --icon-footer-unactive: #ffffff1a;
+    --what-we-do-description: #2f303acc;
+    --form-border-unactive: #21212133;
+    --coments-placeholder: #75757580;
+    --newsletter-input-border: #ffffff4d;
+}

@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $fonfFamily;
+    color: var(--primary-color);
+    list-style-type: none;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section {
+    padding: 94px 15px;
+}
+
+.section-header {
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    &--hero {
+        color: var(--main-white);
+        font-weight: 900;
+        font-size: 44px;
+        text-transform: uppercase;
+        max-width: 696px;
+    }
+}

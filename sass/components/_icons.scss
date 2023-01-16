@@ -1,0 +1,31 @@
+.media-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: $transition-duration;
+    transition-timing-function: $transition-timing-function;
+    &--team {
+        fill: var(--icon-unactive);
+        transition-property: fill, background-color;
+        &:hover,
+        &:focus {
+            background-color: var(--main-blue);
+            fill: var(--main-white);
+            cursor: pointer;
+        }
+    }
+    &--footer {
+        background-color: var(--icon-footer-unactive);
+        fill: var(--main-white);
+        transition-property: background-color;
+    }
+    &:hover,
+    &:focus {
+        background-color: var(--main-blue);
+        fill: var(--main-white);
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,30 @@
+.clients {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    &__items {
+        display: flex;
+        gap: 30px;
+        list-style: none;
+    }
+    &__icon {
+        display: flex;
+        border: solid 1px var(--icon-unactive);
+        border-radius: 4px;
+        fill: var(--icon-unactive);
+        width: 170px;
+        height: 92px;
+        align-items: center;
+        justify-content: center;
+        transition-property: fill;
+        transition-duration: $transition-duration;
+        transition-timing-function: $transition-timing-function;
+        &:hover,
+        &:focus {
+            fill: var(--main-blue);
+            border: 1px solid var(--main-blue);
+            cursor: pointer;
+        }
+    }
+}

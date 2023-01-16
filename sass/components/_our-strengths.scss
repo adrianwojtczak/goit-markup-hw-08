@@ -1,0 +1,30 @@
+.our-strengths {
+    font-size: 14px;
+    padding-bottom: 0px;
+    &__wrapper {
+        display: flex;
+        gap: 0 30px;
+        list-style-type: none;
+    }
+    &__item {
+        max-width: 270px;
+    }
+    &__header {
+        font-weight: 700;
+        line-height: 1.14;
+        margin: 30px 0 10px;
+    }
+    &__content {
+        color: var(--main-grey);
+        line-height: 1.71;
+    }
+    &__icon {
+        display: flex;
+        background: var(--button-color);
+        border-radius: 4px;
+        width: 270px;
+        height: 120px;
+        align-items: center;
+        justify-content: center;
+    }
+}
