@@ -1,14 +1,77 @@
 .hero {
-    padding: 200px 0;
+    padding: 118px 0;
     background-color: var(--bg-dark);
     background-image: linear-gradient(var(--bg-hero), var(--bg-hero)),
-        url(../images/hero-section-bg.jpg);
+        url(../images/mobile/hero-bg-mobile.jpg);
     background-position: center;
     background-repeat: no-repeat;
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        .hero {
+            background-image: linear-gradient(var(--bg-hero), var(--bg-hero)),
+                url(../images/mobile/hero-bg-mobile@2x.jpg);
+        }
+    }
     &__wrapper {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 30px;
+    }
+}
+
+@media screen and (min-width: $tablet) {
+    .hero {
+        background-color: var(--bg-dark);
+        background-image: linear-gradient(var(--bg-hero), var(--bg-hero)),
+            url(../images/tablet/hero-bg-tablet.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            .hero {
+                background-image: linear-gradient(
+                        var(--bg-hero),
+                        var(--bg-hero)
+                    ),
+                    url(../images/tablet/hero-bg-tablet@2x.jpg);
+            }
+        }
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    .hero {
+        padding: 200px 0;
+        background-color: var(--bg-dark);
+        background-image: linear-gradient(var(--bg-hero), var(--bg-hero)),
+            url(../images/desktop/hero-bg.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            .hero {
+                background-image: linear-gradient(
+                        var(--bg-hero),
+                        var(--bg-hero)
+                    ),
+                    url(../images/desktop/hero-bg@2x.jpg);
+            }
+        }
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
     }
 }

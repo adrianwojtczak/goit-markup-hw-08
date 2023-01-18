@@ -69,16 +69,16 @@
                         +48 111 111 111</a
                     >
                 </div>
-                <button
-                    class="menu-toggle js-open-menu"
-                    aria-expanded="false"
-                    aria-controls="mobile-menu"
-                >
-                    <svg class="mobile-menu__icon" width="40" height="40">
-                        <use href="images/icons.svg#icon-mobile-open"></use>
-                    </svg>
-                </button>
             </div>
+            <button
+                class="menu-toggle js-open-menu"
+                aria-expanded="false"
+                aria-controls="mobile-menu"
+            >
+                <svg class="mobile-menu__icon" width="40" height="40">
+                    <use href="images/icons.svg#icon-mobile-open"></use>
+                </svg>
+            </button>
         </header>
         <main>
             <section class="section hero">
@@ -139,7 +139,7 @@
                                 </svg>
                             </div>
                             <h3 class="our-strengths__header">Lorem ipsum</h3>
-                            <p class="our-strengths_content">
+                            <p class="our-strengths__content">
                                 Lorem ipsum dolor sit amet, consectetur
                                 adipiscing elit. Nam vel arcu sem. Sed non
                                 sodales dui. Interdum et malesuada
@@ -163,7 +163,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="section">
+            <section class="section section--hidden">
                 <!--czym się zajmujemy-->
                 <div class="container what-we-do">
                     <h2 class="section-header">Czym się zajmujemy</h2>
@@ -439,7 +439,7 @@
                                     height="260"
                                     width="270"
                                 />
-                                <figcaption class="cteam__cards-description">
+                                <figcaption class="team__cards-description">
                                     <h3 class="team__cards-header">Joe Doe</h3>
                                     <p class="team__cards-content">
                                         UI Designer
@@ -508,59 +508,35 @@
                 <div class="container clients">
                     <h2 class="section-header">Nasi klienci</h2>
                     <ul class="clients__items">
-                        <li>
-                            <div class="clients__icon">
-                                <svg width="106" height="60">
-                                    <use
-                                        href="./images/icons.svg#icon-logo1"
-                                    ></use>
-                                </svg>
-                            </div>
+                        <li class="clients__icon">
+                            <svg width="106" height="60">
+                                <use href="./images/icons.svg#icon-logo1"></use>
+                            </svg>
                         </li>
-                        <li>
-                            <div class="clients__icon">
-                                <svg width="106" height="60">
-                                    <use
-                                        href="./images/icons.svg#icon-logo2"
-                                    ></use>
-                                </svg>
-                            </div>
+                        <li class="clients__icon">
+                            <svg width="106" height="60">
+                                <use href="./images/icons.svg#icon-logo2"></use>
+                            </svg>
                         </li>
-                        <li>
-                            <div class="clients__icon">
-                                <svg width="106" height="60">
-                                    <use
-                                        href="./images/icons.svg#icon-logo3"
-                                    ></use>
-                                </svg>
-                            </div>
+                        <li class="clients__icon">
+                            <svg width="106" height="60">
+                                <use href="./images/icons.svg#icon-logo3"></use>
+                            </svg>
                         </li>
-                        <li>
-                            <div class="clients__icon">
-                                <svg width="106" height="60">
-                                    <use
-                                        href="./images/icons.svg#icon-logo4"
-                                    ></use>
-                                </svg>
-                            </div>
+                        <li class="clients__icon">
+                            <svg width="106" height="60">
+                                <use href="./images/icons.svg#icon-logo4"></use>
+                            </svg>
                         </li>
-                        <li>
-                            <div class="clients__icon">
-                                <svg width="106" height="60">
-                                    <use
-                                        href="./images/icons.svg#icon-logo5"
-                                    ></use>
-                                </svg>
-                            </div>
+                        <li class="clients__icon">
+                            <svg width="106" height="60">
+                                <use href="./images/icons.svg#icon-logo5"></use>
+                            </svg>
                         </li>
-                        <li>
-                            <div class="clients__icon">
-                                <svg width="106" height="60">
-                                    <use
-                                        href="./images/icons.svg#icon-logo6"
-                                    ></use>
-                                </svg>
-                            </div>
+                        <li class="clients__icon">
+                            <svg width="106" height="60">
+                                <use href="./images/icons.svg#icon-logo6"></use>
+                            </svg>
                         </li>
                     </ul>
                 </div>
@@ -569,54 +545,56 @@
         <footer class="page-footer">
             <!--stopka-->
             <div class="container page-footer__wrapper">
-                <div>
-                    <a href="index.html" class="logo">
-                        Web
-                        <span class="logo__footer">Studio</span>
-                    </a>
-                    <address class="page-footer__address">
-                        <p class="page-footer__address-primary">
-                            m. Warszawa, Aleje Jerozolimskie 21
-                        </p>
-                        <p class="page-footer__address-secondary">
-                            info@example.com
-                        </p>
-                        <p class="page-footer__address-secondary">
-                            +48 111 111 111
-                        </p>
-                    </address>
-                </div>
-                <div>
-                    <p class="page-footer__join-header">dołącz do nas</p>
-                    <div class="page-footer__join-icons">
-                        <a href="#" class="media-icon media-icon--footer">
-                            <svg width="20px" height="20px">
-                                <use
-                                    href="./images/icons.svg#icon-instagram"
-                                ></use>
-                            </svg>
+                <div class="page-footer__contacts">
+                    <div>
+                        <a href="index.html" class="logo logo--footer-mobile">
+                            Web
+                            <span class="logo__footer">Studio</span>
                         </a>
-                        <a href="#" class="media-icon media-icon--footer">
-                            <svg width="20px" height="20px">
-                                <use
-                                    href="./images/icons.svg#icon-twitter"
-                                ></use>
-                            </svg>
-                        </a>
-                        <a href="#" class="media-icon media-icon--footer">
-                            <svg width="20px" height="20px">
-                                <use
-                                    href="./images/icons.svg#icon-facebook"
-                                ></use>
-                            </svg>
-                        </a>
-                        <a href="#" class="media-icon media-icon--footer">
-                            <svg width="20px" height="20px">
-                                <use
-                                    href="./images/icons.svg#icon-linkedin"
-                                ></use>
-                            </svg>
-                        </a>
+                        <address class="page-footer__address">
+                            <p class="page-footer__address-primary">
+                                m. Warszawa, Aleje Jerozolimskie 21
+                            </p>
+                            <p class="page-footer__address-secondary">
+                                info@example.com
+                            </p>
+                            <p class="page-footer__address-secondary">
+                                +48 111 111 111
+                            </p>
+                        </address>
+                    </div>
+                    <div>
+                        <p class="page-footer__join-header">dołącz do nas</p>
+                        <div class="page-footer__join-icons">
+                            <a href="#" class="media-icon media-icon--footer">
+                                <svg width="20px" height="20px">
+                                    <use
+                                        href="./images/icons.svg#icon-instagram"
+                                    ></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="media-icon media-icon--footer">
+                                <svg width="20px" height="20px">
+                                    <use
+                                        href="./images/icons.svg#icon-twitter"
+                                    ></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="media-icon media-icon--footer">
+                                <svg width="20px" height="20px">
+                                    <use
+                                        href="./images/icons.svg#icon-facebook"
+                                    ></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="media-icon media-icon--footer">
+                                <svg width="20px" height="20px">
+                                    <use
+                                        href="./images/icons.svg#icon-linkedin"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <form class="page-footer__newsletter">
@@ -626,7 +604,7 @@
                         >Zapisz się do newslettera
                     </label>
                     <div class="page-footer__newsletter-wrapper">
-                        <label>
+                        <label class="page-footer__input-wrapper">
                             <input
                                 type="email"
                                 name="newsletter-email"

@@ -5,6 +5,7 @@
     gap: 50px;
     &__wrapper {
         display: flex;
+        flex-wrap: wrap;
         gap: 30px;
         list-style: none;
     }
@@ -27,5 +28,16 @@
         align-items: center;
         color: var(--main-white);
         background-color: var(--what-we-do-description);
+    }
+}
+
+.section--hidden {
+    display: none;
+    padding-top: 0;
+}
+
+@media screen and (min-width: 1200px) {
+    .section--hidden {
+        display: block;
     }
 }

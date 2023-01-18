@@ -1,22 +1,22 @@
 .page-header {
     border-bottom: solid var(--header-gray);
-    padding-top: 24px;
-    padding-bottom: 25px;
+    padding: 16px 15px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
+    letter-spacing: 0.02em;
     color: var(--main-grey);
     fill: var(--main-grey);
     &__wrapper {
         display: flex;
-        gap: 93px;
+        gap: 83px;
         align-items: center;
     }
     &__nav {
         color: var(--primary-color);
-        gap: 0 46px;
+        gap: 60px;
         list-style: none;
-        display: flex;
+        display: none;
         justify-content: space-between;
         align-items: center;
     }
@@ -48,16 +48,19 @@
         }
     }
     &__contacts {
-        display: flex;
-        gap: 0 50px;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
         margin-left: auto;
     }
     &__contacts-item {
+        font-size: 12px;
+        line-height: 1.17;
         text-decoration: none;
         color: inherit;
         display: flex;
-        gap: 10px;
-        display: flex;
+        gap: 8px;
         text-decoration: none;
         color: inherit;
         transition-property: color, fill;
@@ -67,6 +70,42 @@
         &:focus {
             color: var(--main-blue);
             fill: var(--main-blue);
+        }
+    }
+}
+
+@media screen and (min-width: $tablet) {
+    .page-header {
+        padding: 21px 15px;
+        &__nav {
+            display: flex;
+        }
+        &__contacts {
+            display: flex;
+        }
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    .page-header {
+        padding-top: 24px;
+        padding-bottom: 25px;
+        &__wrapper {
+            gap: 93px;
+        }
+        &__nav {
+            gap: 46px;
+        }
+        &__contacts {
+            flex-direction: row;
+            align-items: center;
+            gap: 0 50px;
+        }
+        &__contacts-item {
+            font-size: 14px;
+            line-height: 1.14;
+            gap: 10px;
+            display: flex;
         }
     }
 }

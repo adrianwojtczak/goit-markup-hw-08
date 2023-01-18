@@ -1,11 +1,4 @@
-@media screen and (max-width: $mobileEnd) {
-    .page-header__nav,
-    .page-header__contacts {
-        display: none;
-    }
-}
-
-@media screen and (min-width: $tabletStart) {
+@media screen and (min-width: $tablet) {
     .menu-toggle {
         display: none;
     }
@@ -16,10 +9,9 @@
     background: none;
     border: none;
     position: absolute;
-    top: 0;
     right: 15px;
+    top: 10px;
     color: var(--main-white);
-    transform: translateY(50%);
 }
 
 .mobile-menu.is-open {

@@ -8,28 +8,50 @@ body {
     color: var(--primary-color);
     list-style-type: none;
 }
-
+/*
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+*/
 .container {
-    width: 1200px;
+    max-width: 1170px;
     margin: 0 auto;
-    padding: 0 15px;
 }
 
 .section {
-    padding: 94px 15px;
+    padding: 60px 15px;
 }
 
 .section-header {
     text-align: center;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
+    font-size: 28px;
+    line-height: 1.18;
     letter-spacing: 0.03em;
     &--hero {
         color: var(--main-white);
         font-weight: 900;
-        font-size: 44px;
+        font-size: 26px;
+        line-height: 1.62;
         text-transform: uppercase;
-        max-width: 696px;
+        letter-spacing: 0.06em;
+        max-width: 365px;
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    .section {
+        padding: 94px 15px;
+    }
+    .section-header {
+        font-size: 36px;
+        line-height: 1.17;
+        &--hero {
+            font-size: 44px;
+            line-height: 1.36;
+            max-width: 696px;
+        }
     }
 }

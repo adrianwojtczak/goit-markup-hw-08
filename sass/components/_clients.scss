@@ -5,6 +5,7 @@
     gap: 50px;
     &__items {
         display: flex;
+        flex-wrap: wrap;
         gap: 30px;
         list-style: none;
     }
@@ -13,7 +14,7 @@
         border: solid 1px var(--icon-unactive);
         border-radius: 4px;
         fill: var(--icon-unactive);
-        width: 170px;
+        flex-basis: calc((100% - 30px) / 2);
         height: 92px;
         align-items: center;
         justify-content: center;
@@ -25,6 +26,28 @@
             fill: var(--main-blue);
             border: 1px solid var(--main-blue);
             cursor: pointer;
+        }
+    }
+}
+
+@media screen and (min-width: $tablet) {
+    .clients {
+        &__items {
+            width: 100%;
+        }
+        &__icon {
+            flex-basis: calc((100% - 60px) / 3);
+        }
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    .clients {
+        &__items {
+            flex-wrap: nowrap;
+        }
+        &__icon {
+            width: 170px;
         }
     }
 }
