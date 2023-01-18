@@ -1,18 +1,23 @@
 .our-strengths {
     font-size: 14px;
+    letter-spacing: 0.03em;
     &__wrapper {
         display: flex;
         flex-wrap: wrap;
-        gap: 0 30px;
+        gap: 30px;
         list-style-type: none;
     }
     &__item {
-        max-width: 270px;
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        gap: 30px;
     }
     &__header {
         font-weight: 700;
         line-height: 1.14;
-        margin: 30px 0 10px;
+        margin-bottom: 10px;
+        text-align: center;
     }
     &__content {
         color: var(--main-grey);
@@ -22,9 +27,30 @@
         display: flex;
         background: var(--button-color);
         border-radius: 4px;
-        width: 270px;
-        height: 120px;
+        min-height: 120px;
         align-items: center;
         justify-content: center;
+    }
+}
+
+@media screen and (min-width: $tablet) {
+    .our-strengths {
+        &__item {
+            flex-basis: calc((100% - 30px) / 2);
+        }
+        &__header {
+            text-align: left;
+        }
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    .our-strengths {
+        &__item {
+            max-width: 270px;
+        }
+        &__icon {
+            width: 270px;
+        }
     }
 }

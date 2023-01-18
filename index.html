@@ -108,12 +108,16 @@
                                     ></use>
                                 </svg>
                             </div>
-                            <h3 class="our-strengths__header">Lorem ipsum</h3>
-                            <p class="our-strengths__content">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Nam vel arcu sem. Sed non
-                                sodales dui. Interdum et malesuada
-                            </p>
+                            <div>
+                                <h3 class="our-strengths__header">
+                                    Lorem ipsum
+                                </h3>
+                                <p class="our-strengths__content">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Nam vel arcu sem. Sed non
+                                    sodales dui. Interdum et malesuada
+                                </p>
+                            </div>
                         </li>
                         <li class="our-strengths__item">
                             <div class="our-strengths__icon">
@@ -123,12 +127,16 @@
                                     ></use>
                                 </svg>
                             </div>
-                            <h3 class="our-strengths__header">Lorem ipsum</h3>
-                            <p class="our-strengths__content">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Nam vel arcu sem. Sed non
-                                sodales dui. Interdum et malesuada
-                            </p>
+                            <div>
+                                <h3 class="our-strengths__header">
+                                    Lorem ipsum
+                                </h3>
+                                <p class="our-strengths__content">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Nam vel arcu sem. Sed non
+                                    sodales dui. Interdum et malesuada
+                                </p>
+                            </div>
                         </li>
                         <li class="our-strengths__item">
                             <div class="our-strengths__icon">
@@ -138,12 +146,16 @@
                                     ></use>
                                 </svg>
                             </div>
-                            <h3 class="our-strengths__header">Lorem ipsum</h3>
-                            <p class="our-strengths__content">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Nam vel arcu sem. Sed non
-                                sodales dui. Interdum et malesuada
-                            </p>
+                            <div>
+                                <h3 class="our-strengths__header">
+                                    Lorem ipsum
+                                </h3>
+                                <p class="our-strengths__content">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Nam vel arcu sem. Sed non
+                                    sodales dui. Interdum et malesuada
+                                </p>
+                            </div>
                         </li>
                         <li class="our-strengths__item">
                             <div class="our-strengths__icon">
@@ -153,12 +165,16 @@
                                     ></use>
                                 </svg>
                             </div>
-                            <h3 class="our-strengths__header">Lorem ipsum</h3>
-                            <p class="our-strengths__content">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Nam vel arcu sem. Sed non
-                                sodales dui. Interdum et malesuada
-                            </p>
+                            <div>
+                                <h3 class="our-strengths__header">
+                                    Lorem ipsum
+                                </h3>
+                                <p class="our-strengths__content">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Nam vel arcu sem. Sed non
+                                    sodales dui. Interdum et malesuada
+                                </p>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -219,14 +235,21 @@
                     <h2 class="section-header">Nasz zespół</h2>
                     <!--karty postaci-->
                     <ul class="team__cards">
-                        <li>
+                        <li class="team__cards-item-wrapper">
                             <figure class="team__cards-item">
                                 <!--karta1-->
                                 <img
-                                    src="./images/product-designer.jpg"
+                                    src="./images/mobile/product-designer-mobile.jpg"
                                     alt="Product Designer"
-                                    height="260"
-                                    width="270"
+                                    srcset="
+                                        images/desktop/product-designer.jpg          270w,
+                                        images/desktop/product-designer@2x.jpg       540w,
+                                        images/tablet/product-designer-tablet.jpg    354w,
+                                        images/tablet/product-designer-tablet@2x.jpg 708w,
+                                        images/mobile/product-designer-mobile.jpg    450w,
+                                        images/mobile/product-designer-mobile@2x.jpg 900w
+                                    "
+                                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px , 100vw"
                                 />
                                 <figcaption class="team__cards-description">
                                     <h3 class="team__cards-header">Joe Doe</h3>
@@ -290,14 +313,21 @@
                                 </figcaption>
                             </figure>
                         </li>
-                        <li>
+                        <li class="team__cards-item-wrapper">
                             <figure class="team__cards-item">
                                 <!--karta2-->
                                 <img
-                                    src="./images/frontend-developer.jpg"
+                                    src="images/mobile/frontend-developer.jpg"
                                     alt="Frontend Developer"
-                                    height="260"
-                                    width="270"
+                                    srcset="
+                                        images/desktop/frontend-developer.jpg          270w,
+                                        images/desktop/frontend-developer@2x.jpg       540w,
+                                        images/tablet/frontend-developer-tablet.jpg    354w,
+                                        images/tablet/frontend-developer-tablet@2x.jpg 708w,
+                                        images/mobile/frontend-developer-mobile.jpg    450w,
+                                        images/mobile/frontend-developer-mobile@2x.jpg 900w
+                                    "
+                                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px , 100vw"
                                 />
                                 <figcaption class="team__cards-description">
                                     <h3 class="team__cards-header">Joe Doe</h3>
@@ -361,14 +391,21 @@
                                 </figcaption>
                             </figure>
                         </li>
-                        <li>
+                        <li class="team__cards-item-wrapper">
                             <figure class="team__cards-item">
                                 <!--karta3-->
                                 <img
-                                    src="./images/marketing.jpg"
+                                    src="images/mobile/marketing.jpg"
                                     alt="Marketing"
-                                    height="260"
-                                    width="270"
+                                    srcset="
+                                        images/desktop/marketing.jpg          270w,
+                                        images/desktop/marketing@2x.jpg       540w,
+                                        images/tablet/marketing-tablet.jpg    354w,
+                                        images/tablet/marketing-tablet@2x.jpg 708w,
+                                        images/mobile/marketing-mobile.jpg    450w,
+                                        images/mobile/marketing-mobile@2x.jpg 900w
+                                    "
+                                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px , 100vw"
                                 />
                                 <figcaption class="team__cards-description">
                                     <h3 class="team__cards-header">Joe Doe</h3>
@@ -430,14 +467,21 @@
                                 </figcaption>
                             </figure>
                         </li>
-                        <li>
+                        <li class="team__cards-item-wrapper">
                             <figure class="team__cards-item">
                                 <!--karta4-->
                                 <img
-                                    src="./images/ui-designer.jpg"
+                                    src="images/mobile/ui-designer-mobile.jpg"
                                     alt="UI Designer"
-                                    height="260"
-                                    width="270"
+                                    srcset="
+                                        images/desktop/ui-designer.jpg          270w,
+                                        images/desktop/ui-designer@2x.jpg       540w,
+                                        images/tablet/ui-designer-tablet.jpg    354w,
+                                        images/tablet/ui-designer-tablet@2x.jpg 708w,
+                                        images/mobile/ui-designer-mobile.jpg    450w,
+                                        images/mobile/ui-designer-mobile@2x.jpg 900w
+                                    "
+                                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px , 100vw"
                                 />
                                 <figcaption class="team__cards-description">
                                     <h3 class="team__cards-header">Joe Doe</h3>
