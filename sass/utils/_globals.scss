@@ -9,14 +9,8 @@ body {
     list-style-type: none;
 }
 
-// img {
-//     display: block;
-//     width: 100%;
-//     height: auto;
-// }
-
 .container {
-    max-width: 1170px;
+    max-width: 450px;
     margin: 0 auto;
 }
 
@@ -41,7 +35,16 @@ body {
     }
 }
 
+@media screen and (min-width: $tablet) {
+    .container {
+        max-width: 738px;
+    }
+}
+
 @media screen and (min-width: $desktop) {
+    .container {
+        max-width: 1170px;
+    }
     .section {
         padding: 94px 15px;
     }

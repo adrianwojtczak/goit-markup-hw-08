@@ -10,7 +10,7 @@
     &__item {
         display: flex;
         flex-direction: column;
-        flex-basis: 100%;
+        max-width: 450px;
         gap: 30px;
     }
     &__header {
@@ -27,7 +27,7 @@
         display: flex;
         background: var(--button-color);
         border-radius: 4px;
-        min-height: 120px;
+        height: 120px;
         align-items: center;
         justify-content: center;
     }
@@ -36,7 +36,7 @@
 @media screen and (min-width: $tablet) {
     .our-strengths {
         &__item {
-            flex-basis: calc((100% - 30px) / 2);
+            max-width: 354px;
         }
         &__header {
             text-align: left;
@@ -48,9 +48,6 @@
     .our-strengths {
         &__item {
             max-width: 270px;
-        }
-        &__icon {
-            width: 270px;
         }
     }
 }

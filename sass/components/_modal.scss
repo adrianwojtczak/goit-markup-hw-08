@@ -1,6 +1,7 @@
 .backdrop {
     display: flex;
     position: fixed;
+    padding: 15px;
     top: 0;
     left: 0;
     bottom: 0;
@@ -41,7 +42,7 @@
         text-align: center;
         font-weight: 700;
         font-size: 20px;
-        line-height: 1.17;
+        line-height: 1.5;
         margin-bottom: 12px;
     }
     &__form {
@@ -111,8 +112,8 @@
     &__accept {
         display: flex;
         margin-bottom: 30px;
-        font-size: 14px;
-        line-height: 1.71;
+        font-size: 12px;
+        line-height: 1.17;
         letter-spacing: 0.03em;
         justify-content: center;
         gap: 7px;
@@ -134,7 +135,7 @@
 
     &__checkmark-checked {
         position: absolute;
-        bottom: 0;
+        top: 0;
         left: 0;
         display: none;
     }
@@ -153,4 +154,16 @@
     pointer-events: none;
     visibility: hidden;
     opacity: 0;
+}
+
+@media screen and (min-width: $desktop) {
+    .modal {
+        &__header {
+            line-height: 1.17;
+        }
+        &__accept {
+            font-size: 14px;
+            line-height: 1.71;
+        }
+    }
 }
